@@ -1,0 +1,27 @@
+{
+  "name": "simple-bridge",
+  "version": "1.0.0",
+  "description": "Cross-chain bridge for ERC20 tokens",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:local": "hardhat run scripts/local-test.js",
+    "node": "hardhat node",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:bnb": "hardhat run scripts/deploy.js --network bnb",
+    "relay": "cd server && node relay.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "chai": "^4.3.0",
+    "hardhat": "^2.22.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "dotenv": "^17.2.2",
+    "ethers": "^6.15.0"
+  }
+}
